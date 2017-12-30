@@ -1,0 +1,12 @@
+doctype html
+html
+	head
+		title="LogIn"
+	body
+		h1 Zaloguj się do aplikacji
+		form(action="http://localhost:3000/auth/google",method="GET")
+			label Nazwa uzytkownika
+			input(name="username")
+			label Hasło
+			input(name="password", type="password")
+			input(type="submit", value="Zaloguj")
